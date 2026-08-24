@@ -1,0 +1,28 @@
+name: Help wanted
+description: Ask for help with using or contributing to Rolling Tale
+title: "[Help]: "
+labels:
+  - help wanted
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: What do you need help with?
+      description: Describe the task, problem, or contribution where you need assistance.
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Platform or area
+      placeholder: Home Assistant, CI, documentation, or other
+  - type: textarea
+    id: attempted
+    attributes:
+      label: What have you tried?
+      description: Include relevant commands, configuration, and results.
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add logs or links, removing secrets and personal information.

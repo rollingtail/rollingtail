@@ -1,0 +1,27 @@
+name: Question
+description: Ask a question about Rolling Tale
+title: "[Question]: "
+labels:
+  - question
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For troubleshooting, include enough detail for others to reproduce or understand your setup.
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: What would you like to know?
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Platform
+      placeholder: Home Assistant, or All
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Include versions, configuration, and relevant logs with secrets removed.

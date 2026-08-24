@@ -1,0 +1,57 @@
+name: Bug report
+description: Report a problem with a Rolling Tale platform package
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Rolling Tale. Please search existing issues before opening a new report.
+  - type: input
+    id: platform
+    attributes:
+      label: Platform
+      description: Which package or platform is affected?
+      placeholder: Home Assistant
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Include the Rolling Tale and Tailscale versions.
+      placeholder: Rolling Tale 1.2.3, Tailscale 1.XX.X
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: List the smallest set of steps that consistently reproduces the issue.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: Paste relevant logs, with secrets and personal information removed.
+      render: text
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include host OS, architecture, and any relevant configuration.
+    validations:
+      required: true

@@ -1,0 +1,34 @@
+name: Feature request
+description: Suggest an improvement or new capability
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Explain the problem your idea would solve and how it would benefit users.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: What limitation or use case motivates this request?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the behavior or implementation you would like to see.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What other approaches or workarounds have you tried?
+  - type: input
+    id: platform
+    attributes:
+      label: Affected platform
+      placeholder: Home Assistant, or All
