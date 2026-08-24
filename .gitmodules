@@ -1,1 +1,6 @@
-		
+[submodule "platforms/home-assistant"]
+	path = platforms/home-assistant
+	url = https://github.com/rollingtail/home-assistant.git
+[submodule "profile"]
+	path = profile
+	url = https://github.com/rollingtail/.github.git
