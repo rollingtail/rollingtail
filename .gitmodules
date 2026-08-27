@@ -4,3 +4,6 @@
 [submodule "profile"]
 	path = profile
 	url = https://github.com/rollingtail/.github.git
+[submodule "website"]
+	path = website
+	url = https://github.com/rollingtail/website.git
